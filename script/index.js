@@ -24,6 +24,8 @@ document.getElementById("btn1").addEventListener("click", function () {
     <p>You have completed <strong>${taskTitle}</strong> at <strong>${formattedTime}</strong></p>
 `;
     container.appendChild(div);
+
+
 })
 
 
@@ -127,7 +129,9 @@ document.getElementById("btn5").addEventListener("click", function () {
     container.appendChild(div);
 })
 document.getElementById("btn6").addEventListener("click", function () {
+
     alert("board updated successfully");
+    alert("Congrats you have completed All the Current Task");
     const initial = getInnerTextByValue("task");
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
@@ -166,12 +170,21 @@ document.getElementById("date").innerText = dates;
 const year = new Date().getFullYear();
 document.getElementById("year").innerText = year;
 
+document.getElementById("blog-btn").addEventListener("click", function () {
+    window.location.href = './blog.html';
+})
 
-// const container = document.getElementById("activityContainer");
-// const div = document.createElement("div");
-// div.innerHTML = `
-// <p>You have Complete  ${} at ${}</p>>
-// `
-// container.appendChild(div);
+document.getElementById("clearHistoryBtn").addEventListener("click", function () {
+    document.getElementById("activityContainer").innerText = "";
+});
+
+
+document.getElementById("bg-btn").addEventListener("click", function () {
+    document.getElementById("body").style.backgroundColor = `rgb(${rand()}, ${rand()}, ${rand()})`;
+});
+
+function rand() {
+    return Math.floor(Math.random() * 256);
+}
 
 

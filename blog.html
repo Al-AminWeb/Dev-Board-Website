@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Page</title>
+  <!-- tailwind cdn -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="max-w-[1510px] mx-auto p-6 bg-[#F4F7FF]">
+<!-- navbar -->
+<header
+        class="flex lg:flex-row flex-col items-center justify-between bg-white rounded-2xl px-6 py-4 mb-6 lg:space-y-0 space-y-6"
+>
+  <div id="nav-left" class="flex items-center gap-3">
+    <img src="./assets/logo.png" alt="" />
+    <div class="text-4xl">Dev<span class="font-bold">Board</span></div>
+  </div>
+  <div id="nav-right" class="flex items-center gap-9">
+    <button
+            id="backBtn"
+            class="text-base font-medium py-3 px-5 bg-[#3752FD] text-white rounded-lg cursor-pointer"
+    >
+      Back to Desk
+    </button>
+  </div>
+</header>
+<main>
+  <h1 class="text-center font-bold text-2xl">Blogs</h1>
+  <div class="mt-6 space-y-6">
+    <div class="bg-white">
+      <h2 class="font-bold border-b border-dashed px-6 py-4 text-xl">
+        Question-1: What are the different ways to select an element in the
+        DOM?
+      </h2>
+      <div class="px-6 py-4">
+        <p class="text-base opacity-70">
+          There are several methods to select HTML elements in the Document Object Model (DOM).
+        </p>
+        <ul class="list-disc px-6 py-4">
+          <li>
+            <span class="font-bold">getElementById()</span> - Selects an element by its ID
+          </li>
+          <li>
+            <span class="font-bold">getElementsByClassName()</span> -
+            Selects elements by class name.
+          </li>
+          <li>
+            <span class="font-bold">querySelector()</span> - Selects the first matching element using a CSS selector.
+
+          </li>
+          <li>
+            <span class="font-bold">querySelectorAll()</span> -Selects all matching elements using a CSS selector.
+          </li>
+          <li>
+            <span class="font-bold">getElementsByTagName()</span> -
+            Selects elements by tag name.।
+          </li>
+        </ul>
+        <p class="text-base opacity-70">
+          The above five methods are used more frequently. Besides these, there are some other methods as well.
+        </p>
+      </div>
+    </div>
+    <div class="bg-white">
+      <h2 class="font-bold border-b border-dashed px-6 py-4 text-xl">
+        Question-2: What is the difference between innerHTML, innerText, and
+        textContent ?
+      </h2>
+      <div class="px-6 py-4">
+        <p class="text-base opacity-70">
+          There are some differences between innerHTML and innerText and textContent.
+        </p>
+        <ul class="list-disc px-6 py-4">
+          <li>
+            <span class="font-bold">innerHTML</span> - innerHTML is used for capturing HTML elements. sometimes it is used for styling. Sometimes it is used appending text to the element. it is used but not much.
+          </li>
+          <li>
+            <span class="font-bold">innerText</span> - innerText is used for applying text.We use it for adding text to the element and we can change element text by using this method.
+          </li>
+          <li>
+            <span class="font-bold">textContent</span> - it is very similar to innerText. Using it we can get or set the text content of an HTML element. We can change text by using this method.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-white">
+      <h2 class="font-bold border-b border-dashed px-6 py-4 text-xl">
+        Question-3: What is event delegation in the DOM?
+      </h2>
+      <p class="px-6 py-4 text-base opacity-70">
+        DOM Delegation is a technique in JavaScript where instead of adding event listeners to multiple individual elements, you add a single event listener to a parent element. This parent then "delegates" the event to its child elements using event bubbling.
+      </p>
+    </div>
+    <div class="bg-white">
+      <h2 class="font-bold border-b border-dashed px-6 py-4 text-xl">
+        Question-4: What is event bubbling in the DOM?
+      </h2>
+      <p class="px-6 py-4 text-base opacity-70">
+        Event bubbling is a concept. If we see a li, it is a part ul again if we se ul, it is a part of div.Maybe the div is a part of section.The section is part of a body. if we bubble it we will get li then ul then div then section and then body this is event bubbling.
+      </p>
+    </div>
+    <div class="bg-white">
+      <h2 class="font-bold border-b border-dashed px-6 py-4 text-xl">
+        Question-5: How do you create, add, and remove elements using
+        JavaScript?
+      </h2>
+      <div class="px-6 py-4">
+        <p class="text-base opacity-70">
+          The way elements can be created, added, and removed using JavaScript is shown below.
+        </p>
+        <ul class="list-disc px-6 py-4">
+          <li>
+            <span class="font-bold">Creating an Element</span> -
+            document.createElement("tagname")
+          </li>
+          <li>
+            <span class="font-bold">Adding an Element</span> -
+            <ul class="list-disc px-6">
+              <li>appendChild()</li>
+              <li>insertBefore()</li>
+              <li>innerHTML</li>
+            </ul>
+            <p class="text-base opacity-70">
+              The above three methods are used more frequently. Additionally, there are other methods to add elements as well.
+            </p>
+          </li>
+          <li>
+            <span class="font-bold">Removing an Element</span> -
+            <ul class="list-disc px-6">
+              <li>removeChild()</li>
+              <li>remove()</li>
+              <li>innerHTML=""</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="./script/blog.js"></script>
+</body>
+</html>

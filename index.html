@@ -21,7 +21,7 @@
       }
     </style>
   </head>
-  <body class="max-w-[1510px] mx-auto p-6 bg-[#F4F7FF]">
+  <body id="body" class="max-w-[1510px] mx-auto p-6 bg-[#F4F7FF]">
     <!-- navbar -->
     <header
       class="flex lg:flex-row flex-col items-center justify-between bg-white rounded-2xl px-6 py-4 mb-6 lg:space-y-0 space-y-6"
@@ -31,14 +31,12 @@
         <div class="text-4xl">Dev<span class="font-bold">Board</span></div>
       </div>
       <div class="flex items-center gap-9">
-        <div
-          class="flex items-center gap-1 bg-[#F4F7FF] py-4 px-5 rounded-full"
-        >
-          <img src="./assets/checkbox.png" alt="" />
+        <div class="flex items-center gap-1 bg-[#F4F7FF] py-4 px-5 rounded-full">
+          <img  src="./assets/checkbox.png" alt="" />
           <span id="completed-task" class="text-3xl font-bold">23</span>
         </div>
         <div class="bg-[#F4F7FF] p-3 rounded-full">
-          <img class="cursor-pointer" src="./assets/theme-btn.png" alt="" />
+          <img id="bg-btn" class="cursor-pointer" src="./assets/theme-btn.png" alt="" />
         </div>
       </div>
     </header>
@@ -59,7 +57,7 @@
               </div>
             </div>
             <div
-              class="col-span-2 flex items-center gap-5 bg-gradient-to-tr from-[#3752FD] to-[#9BA8F8] p-3 rounded-xl cursor-pointer"
+              class="col-span-2 flex items-center gap-5 bg-gradient-to-tr from-[#3752FD] to-[#9BA8F8] p-3 rounded-xl cursor-pointer" id="blog-btn"
             >
               <img src="./assets/board.png" alt="" />
               <h3 class="font-medium text-white text-2xl">
@@ -247,7 +245,7 @@
             <img src="./assets/activity.png" alt="" />
             <h4>Activity Log</h4>
           </div>
-          <button
+          <button id="clearHistoryBtn"
             class="text-base font-medium py-2 px-5 bg-[#3752FD] text-white rounded-lg cursor-pointer"
           >
             Clear History
