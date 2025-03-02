@@ -1,8 +1,15 @@
 document.getElementById("btn1").addEventListener("click", function () {
     alert("board updated successfully");
     const initial = getInnerTextByValue("task");
+
+
+
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
+
+    if (sum === 0) {
+        alert("Congrats! You have completed all the current tasks!");
+    }
 
     const completedTask = getInnerTextByValue("completed-task");
     const add = completedTask + 1;
@@ -35,6 +42,10 @@ document.getElementById("btn2").addEventListener("click", function () {
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
 
+    if (sum === 0) {
+        alert("Congrats! You have completed all the current tasks!");
+    }
+
     const completedTask = getInnerTextByValue("completed-task");
     const add = completedTask + 1;
     document.getElementById("completed-task").innerText = add;
@@ -59,6 +70,10 @@ document.getElementById("btn3").addEventListener("click", function () {
     const initial = getInnerTextByValue("task");
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
+
+    if (sum === 0) {
+        alert("Congrats! You have completed all the current tasks!");
+    }
 
     const completedTask = getInnerTextByValue("completed-task");
     const add = completedTask + 1;
@@ -85,6 +100,10 @@ document.getElementById("btn4").addEventListener("click", function () {
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
 
+    if (sum === 0) {
+        alert("Congrats! You have completed all the current tasks!");
+    }
+
     const completedTask = getInnerTextByValue("completed-task");
     const add = completedTask + 1;
     document.getElementById("completed-task").innerText = add;
@@ -110,6 +129,10 @@ document.getElementById("btn5").addEventListener("click", function () {
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
 
+    if (sum === 0) {
+        alert("Congrats! You have completed all the current tasks!");
+    }
+
     const completedTask = getInnerTextByValue("completed-task");
     const add = completedTask + 1;
     document.getElementById("completed-task").innerText = add;
@@ -131,10 +154,13 @@ document.getElementById("btn5").addEventListener("click", function () {
 document.getElementById("btn6").addEventListener("click", function () {
 
     alert("board updated successfully");
-    alert("Congrats you have completed All the Current Task");
     const initial = getInnerTextByValue("task");
     const sum = initial - 1;
     document.getElementById("task").innerText = sum;
+
+    if (sum === 0) {
+        alert("Congrats! You have completed all the current tasks!");
+    }
 
     const completedTask = getInnerTextByValue("completed-task");
     const add = completedTask + 1;
